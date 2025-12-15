@@ -5,7 +5,7 @@ The Identity Collaboration Hub is the primary umbrella repository for specificat
 Specifically, this repository goal is to be a common place to host following parts of the ecosystem:
 
 #### Identity Standards
-- DID method specifications
+- DID method specifications 
 - Interoperability proposals
 - Architecture documentation
 - Reference flows and diagrams
@@ -74,3 +74,5 @@ Please note that topics related to integration plugins (OWF Credo, ACA-Py) can a
 - Extending guides, adding new ones and other community materials
 - Moving previously created identity specifications/standards into this repo
 - Adding reference implementations for identity applications on Hiero
+
+

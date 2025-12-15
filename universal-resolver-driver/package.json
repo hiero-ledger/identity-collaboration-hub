@@ -1,0 +1,28 @@
+{
+  "name": "uni-resolver-driver-did-hedera",
+  "version": "1.0.0",
+  "description": "Hedera DID Universal Resolver Driver",
+  "main": "index.js",
+  "scripts": {
+    "start": "bun index.ts",
+    "format": "prettier --write ./*.ts",
+    "format-check": "prettier --check ./*.ts"
+  },
+  "keywords": [
+    "did",
+    "hedera",
+    "resolver",
+    "swagger"
+  ],
+  "license": "Apache-2.0",
+  "private": true,
+  "dependencies": {
+    "@hiero-did-sdk/core": "0.1.7",
+    "@hiero-did-sdk/resolver": "0.1.7",
+    "elysia": "1.4.18"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.2",
+    "prettier": "^3.6.2"
+  }
+}
