@@ -1,0 +1,46 @@
+name: Render and deploy identity specifications
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'specifications/**'
+      - '!specifications/README.md'
+
+jobs:
+  build-and-deploy-spec:
+    defaults:
+      run:
+        working-directory: ./specifications
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout 🛎️
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false # If you're using actions/checkout@v4 you must set persist-credentials to false in most cases for the deployment to work correctly
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm install
+          npm run render
+          rm -rf .gitignore
+          rm -rf node_modules
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./specifications
+          allow_empty_commit: true
+          force_orphan: true
+
+
+
