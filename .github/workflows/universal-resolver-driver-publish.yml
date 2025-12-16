@@ -21,6 +21,9 @@ env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository_owner }}/uni-resolver-driver-did-hedera
 
+permissions:
+  contents: read
+
 jobs:
   build:
     defaults:
@@ -41,7 +44,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       # Extract hiero-did-sdk version from package.json for tagging
       - name: Extract hiero-did-sdk version
