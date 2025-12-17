@@ -1,6 +1,7 @@
 name: Build and publish Universal Resolver driver
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
