@@ -18,8 +18,8 @@
         "repo": "identity-collaboration-hub"
       },
       "output_path": "./hiero-anoncreds-method",
-      "logo": "https://raw.githubusercontent.com/DSRCorporation/hedera-anoncreds-method/refs/heads/main/hiero-logo-wide.jpg",
-      "logo_link": "https://github.com/DSRCorporation/hedera-anoncreds-method",
+      "logo": "https://raw.githubusercontent.com/hiero-ledger/identity-collaboration-hub/refs/heads/main/specifications/hiero-logo-wide.jpg",
+      "logo_link": "https://github.com/hiero-ledger/identity-collaboration-hub/tree/main/specifications/hiero-anoncreds-method",
       "katex": true,
       "external_specs": [
         {
