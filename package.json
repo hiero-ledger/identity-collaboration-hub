@@ -1,0 +1,25 @@
+{
+  "name": "hiero-identity-specifications",
+  "version": "0.1.0",
+  "description": "Hiero Identity Specifications",
+  "scripts": {
+    "edit": "node -e \"require('spec-up')()\"",
+    "render": "node -e \"require('spec-up')({ nowatch: true })\"",
+    "dev": "node -e \"require('spec-up')({ dev: true })\""
+  },
+  "keywords": [
+    "Hiero",
+    "Hedera",
+    "DID",
+    "AnonCreds",
+    "verifiable credentials"
+  ],
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/hiero-ledger/identity-collaboration-hub/issues"
+  },
+  "homepage": "https://github.com/hiero-ledger/identity-collaboration-hub/specifications",
+  "devDependencies": {
+    "spec-up": "github:brianorwhatever/spec-up#master"
+  }
+}
