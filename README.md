@@ -1,5 +1,10 @@
 # Hiero Identity Collaboration Hub
 
+[![Commit activity](https://img.shields.io/github/commit-activity/m/hiero-ledger/identity-collaboration-hub)](https://github.com/hiero-ledger/identity-collaboration-hub/commits/main)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/hiero-ledger/identity-collaboration-hub/badge)](https://scorecard.dev/viewer/?uri=github.com/hiero-ledger/identity-collaboration-hub)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/10697/badge)](https://bestpractices.coreinfrastructure.org/projects/10697)
+[![License](https://img.shields.io/github/license/hiero-ledger/identity-collaboration-hub)](https://github.com/hiero-ledger/identity-collaboration-hub/blob/main/LICENSE)
+
 The Identity Collaboration Hub is the primary umbrella repository for specifications/standards, architecture documents, shared libraries, and reference implementations related to identity within the Hiero Ledger ecosystem.
 
 Specifically, this repository goal is to be a common place to host following parts of the ecosystem:
@@ -16,7 +21,7 @@ Specifically, this repository goal is to be a common place to host following par
 - Proof-of-concept implementations
 - Reference implementations and examples
 
-Please note that identity-related SDKs and other libraries/tools that meant to be used as direct dependencies are hosted in separate repositories.
+Please note that identity-related SDKs and other libraries/tools that are meant to be used as direct dependencies are hosted in separate repositories.
 
 ## Hiero Identity ecosystem references
 
@@ -34,7 +39,7 @@ Please note that identity-related SDKs and other libraries/tools that meant to b
 Hiero currently provides robust SDKs designed to streamline the integration of Decentralized Identity within your applications on the Hedera ledger.
 By adhering to the Hedera DID Method and Hedera AnonCreds Method specification, SDKs provide developers with a comprehensive suite of tools to create, manage, and resolve DIDs and AnonCreds objects using Hedera Consensus Service (HCS).
 
-Following SDKs are currently available:
+The following SDKs are currently available:
 - [Hiero DID SDK JavaScript](https://github.com/hiero-ledger/hiero-did-sdk-js)
 - [Hiero DID SDK Python](https://github.com/hiero-ledger/hiero-sdk-python)
 
@@ -45,16 +50,16 @@ Following SDKs are currently available:
 
 ## Join the community
 
-Feel free to reach out for Hiero Identity Community to discuss existing projects, outstanding questions and new contributions.
+Feel free to reach out for Hiero Identity Community to discuss existing projects, outstanding questions, and new contributions.
 
 ### Hiero Identity Community meetings
 
 Hiero Identity Community organizes meetings to discuss the latest and greatest of decentralized identity on Hiero/Hedera.
 
-Target audience includes operators of identity platforms supporting Hiero/Hedera and developers interested in using and contributing to Hiero identity repos.
+The target audience includes operators of identity platforms supporting Hiero/Hedera and developers interested in using and contributing to Hiero identity repos.
 
 The meeting is conducted monthly on Thursdays at 8:00 AM PST.
-Please refer to [Hiero community calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/hiero?view=week) for next meetings schedule and instructions to join.
+Please refer to [Hiero community calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/hiero?view=week) for the next meetings schedule and instructions to join.
 
 ### Discord
 
