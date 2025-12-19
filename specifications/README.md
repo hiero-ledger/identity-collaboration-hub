@@ -3,7 +3,7 @@
 This folder serves as a home for Hiero Identity specifications.
 
 Specifications are using [Spec-Up] format.
-For details on Spec-Up features and functionality please see [Spec-Up Documentation].
+For details on Spec-Up features and functionality, please see [Spec-Up Documentation].
 
 [Spec-Up]: https://github.com/decentralized-identity/spec-up
 [Spec-Up Documentation]: https://identity.foundation/spec-up/
@@ -20,12 +20,12 @@ Editing the spec locally requires `npm` and `node` installed.
 
 ## How to contribute a new specification
 
-In order to add new specification to the repo, please do the following:
+To add a new specification to the repo, please do the following:
 
-- Create new sub-folder in `specifications`
-  - It's recommended to use folder name that corresponds to specification name/title
-- Add specification content as Markdown files to new sub-folder
-- Add a new specification entry to `specs.json` file, pointing to a new sub-folder and defining rendering options and external spec references
+- Create new subfolder in `specifications`
+  - It's recommended to use a folder name that corresponds to the specification name / title
+- Add specification content as Markdown files to a new subfolder
+- Add a new specification entry to `specs.json` file, pointing to a new subfolder and defining rendering options and external spec references
   - Specification URL can be inferred from common GH pages URL by appending `output_path` from specification entry: `https://hiero-ledger.github.io/identity-collaboration-hub/<output_path>/`
 
 Please refer to [Spec-Up Documentation] for general guidance on content structure/formatting and available options for `specs.json` configuration.
