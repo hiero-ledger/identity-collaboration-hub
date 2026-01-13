@@ -1,0 +1,38 @@
+name: Verify Hiero Wallet changes
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'hiero-wallet/**'
+
+# This allows a subsequently queued workflow run to interrupt previous runs
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    defaults:
+      run:
+        working-directory: ./hiero-wallet
+    name: Build and check
+    runs-on: ubuntu-latest
+    environment: github
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Node and install dependencies
+        uses: ./.github/actions/setup-npm-env
+
+      - name: Run typecheck
+        run: yarn typecheck
+
+      - name: Run ESLint
+        run: yarn lint
+
+      - name: Run tests
+        run: yarn test
