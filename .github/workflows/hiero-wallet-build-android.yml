@@ -8,6 +8,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   build:
     defaults:
@@ -20,19 +23,31 @@ jobs:
 
     steps:
       - name: Prepare Github Runner
-         uses: pandaswhocode/initialize-github-job@ffb7446339e8e6007b942312ac95457d1a20b6cf # v1.0.4
-         with:
-           checkout: 'true'
-           checkout-ref: '${{ github.ref }}'
-           checkout-token: '${{ secrets.GITHUB_TOKEN }}'
-           checkout-fetch-depth: '0'
-           setup-java: 'true'
-           java-version: '15'
-           java-distribution: 'zulu'
-           java-cache: 'gradle'
+        uses: pandaswhocode/initialize-github-job@ffb7446339e8e6007b942312ac95457d1a20b6cf # v1.0.4
+        with:
+          checkout: 'true'
+          checkout-ref: '${{ github.ref }}'
+          checkout-token: '${{ secrets.GITHUB_TOKEN }}'
+          checkout-fetch-depth: '0'
+          setup-java: 'true'
+          java-version: '15'
+          java-distribution: 'zulu'
+          java-cache: 'gradle'
         
-      - name: Set up Node and install dependencies
-        uses: ./.github/actions/setup-npm-env
+      - name: Enable Corepack
+        run: corepack enable
+        shell: bash
+
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 20
+          cache: 'yarn'
+          cache-dependency-path: ./hiero-wallet/yarn.lock
+
+      - name: Install dependencies
+        run: yarn install --immutable
+        shell: bash
 
       - name: Get app version
         id: version

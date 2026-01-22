@@ -24,6 +24,10 @@ env:
 
 permissions:
   contents: read
+  packages: write
+  # This is used to complete the identity challenge
+  # with sigstore/fulcio when running outside of PRs.
+  id-token: write
 
 jobs:
   build:
@@ -31,26 +35,18 @@ jobs:
       run:
         working-directory: ./universal-resolver-driver
     runs-on: hl-idcol-lin-md
-    permissions:
-      contents: read
-      packages: write
-      # This is used to complete the identity challenge
-      # with sigstore/fulcio when running outside of PRs.
-      id-token: write
-
     steps:
       - name: Harden the runner (Audit all outbound calls)
         uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
         with:
           egress-policy: audit
 
-      - name: Checkout repository
       - name: Prepare Github Runner
-         uses: pandaswhocode/initialize-github-job@ffb7446339e8e6007b942312ac95457d1a20b6cf # v1.0.4
-         with:
-           checkout: 'true'
-           checkout-ref: '${{ github.ref }}'
-           checkout-token: '${{ secrets.GITHUB_TOKEN }}'
+        uses: pandaswhocode/initialize-github-job@ffb7446339e8e6007b942312ac95457d1a20b6cf # v1.0.4
+        with:
+          checkout: 'true'
+          checkout-ref: '${{ github.ref }}'
+          checkout-token: '${{ secrets.GITHUB_TOKEN }}'
 
       # Extract hiero-did-sdk version from package.json for tagging
       - name: Extract hiero-did-sdk version
