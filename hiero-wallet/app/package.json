@@ -2,6 +2,7 @@
   "name": "hiero-ssi-wallet",
   "description": "Hiero SSI Wallet",
   "version": "0.0.1",
+  "license": "Apache-2.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
