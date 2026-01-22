@@ -45,7 +45,12 @@ jobs:
           egress-policy: audit
 
       - name: Checkout repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+      - name: Prepare Github Runner
+         uses: pandaswhocode/initialize-github-job@ffb7446339e8e6007b942312ac95457d1a20b6cf # v1.0.4
+         with:
+           checkout: 'true'
+           checkout-ref: '${{ github.ref }}'
+           checkout-token: '${{ secrets.GITHUB_TOKEN }}'
 
       # Extract hiero-did-sdk version from package.json for tagging
       - name: Extract hiero-did-sdk version
