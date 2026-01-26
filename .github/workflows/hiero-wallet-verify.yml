@@ -21,7 +21,7 @@ jobs:
       run:
         working-directory: ./hiero-wallet
     name: Build and check
-    runs-on: ubuntu-latest
+    runs-on: hl-idcol-lin-md
     environment: github
 
     steps:
