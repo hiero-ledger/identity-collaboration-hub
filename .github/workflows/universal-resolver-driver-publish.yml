@@ -30,7 +30,7 @@ jobs:
     defaults:
       run:
         working-directory: ./universal-resolver-driver
-    runs-on: ubuntu-latest
+    runs-on: hl-idcol-lin-md
     permissions:
       contents: read
       packages: write
