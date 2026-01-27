@@ -22,7 +22,6 @@ jobs:
         working-directory: ./hiero-wallet
     name: Build and check
     runs-on: hl-idcol-lin-md
-    environment: github
 
     steps:
       - name: Prepare Github Runner
@@ -31,17 +30,12 @@ jobs:
           checkout: 'true'
           checkout-ref: '${{ github.ref }}'
           checkout-token: '${{ secrets.GITHUB_TOKEN }}'
+          setup-node: 'true'
+          node-version: '20'
 
       - name: Enable Corepack
         run: corepack enable
         shell: bash
-
-      - name: Set up Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version: 20
-          cache: 'yarn'
-          cache-dependency-path: ./hiero-wallet/yarn.lock
 
       - name: Install dependencies
         run: yarn install --immutable

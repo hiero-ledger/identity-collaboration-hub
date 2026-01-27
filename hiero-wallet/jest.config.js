@@ -7,7 +7,7 @@ module.exports = {
   projects: [
     {
       ...baseConfig,
-      displayName: 'dsr-ssi-wallet',
+      displayName: 'hiero-ssi-wallet',
       testRegex: getTestRegexForPath('app'),
     },
     {
