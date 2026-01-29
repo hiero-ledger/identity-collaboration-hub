@@ -1,5 +1,5 @@
-index.html
-fonts
+specifications/**/index.html
+specifications/**/fonts
 
 # Logs
 logs
@@ -48,10 +48,6 @@ node_modules/
 
 # Output of 'npm pack'
 *.tgz
-
-# dotenv environment variables file
-.env
-.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
