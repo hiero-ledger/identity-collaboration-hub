@@ -48,6 +48,10 @@ The following SDKs are currently available:
 - [OWF Credo](https://github.com/openwallet-foundation/credo-ts/tree/main/packages/hedera)
 - [OWF ACA-Py](https://github.com/openwallet-foundation/acapy)
 
+### End-User applications built on Hiero Identity
+
+- [Heka Identity Platform](https://github.com/hiero-ledger/heka-identity-platform)
+
 ## Join the community
 
 Feel free to reach out for Hiero Identity Community to discuss existing projects, outstanding questions, and new contributions.
