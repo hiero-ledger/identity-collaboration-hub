@@ -1,6 +1,0 @@
-export * from './AlertModal'
-export * from './ActionWarningModal'
-export * from './LoadingModal'
-export * from './PasskeysAuthModal'
-export * from './CredentialOfferAcceptModal'
-export * from './ProofRequestAcceptModal'

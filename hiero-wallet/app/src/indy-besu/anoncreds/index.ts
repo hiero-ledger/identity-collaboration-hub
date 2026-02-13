@@ -1,1 +1,0 @@
-export { IndyBesuAnoncredsRegistry } from './IndyBesuAnoncredsResolver'
