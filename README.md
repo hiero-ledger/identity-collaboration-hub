@@ -41,7 +41,7 @@ By adhering to the Hedera DID Method and Hedera AnonCreds Method specification, 
 
 The following SDKs are currently available:
 - [Hiero DID SDK JavaScript](https://github.com/hiero-ledger/hiero-did-sdk-js)
-- [Hiero DID SDK Python](https://github.com/hiero-ledger/hiero-sdk-python)
+- [Hiero DID SDK Python](https://github.com/hiero-ledger/hiero-did-sdk-python)
 
 ### Hedera integration plugins for OWF projects
 
@@ -73,6 +73,7 @@ At the moment, there are following-identity related text channels under this gro
 - `hiero-identity-collaboration-hub` - channel dedicated to this repo and also a general collaboration channel for identity topics. If you're not sure where to ask or search for help, please do not hesitate to use this channel to reach out for community
 - `hiero-did-sdk-js` - channel dedicated to Hiero DID SDK JS discussions
 - `hiero-did-sdk-python` - channel dedicated to Hiero DID SDK Python discussions
+- `heka-identity-platform` - channel dedicated to Heka Identity Platform discussions
 
 Please note that topics related to integration plugins (OWF Credo, ACA-Py) can also be discussed in corresponding channels in OWF Discord ([invitation link](https://discord.com/invite/yjvGPd5FCU))
 - `Growth projects` -> `credo` - channel dedicated to Credo framework
