@@ -15,13 +15,16 @@ Maintainers are assigned the following scopes in this repository:
 
 ## Active Maintainers
 
-| Name               | GitHub ID         | Scope | LFID | Discord ID | Email | Company Affiliation |
-|--------------------|-------------------|-------|------|------------|-------|---------------------|
-| Keith Kowal        | Reccetech         |       |      |            |       | Hashgraph           |
-| Diane Muller       | dmueller2001      |       |      |            |       | Hashgraph           |
-| Alexander Shenshin | AlexanderShenshin |       |      |            |       | DSR                 |
-| Pablo Buitrago     | ChangoBuitrago    |       |      |            |       |                     |
-| Jakub Sydor        | Harasz            |       |      |            |       |                     |
+| Name                  | GitHub ID         | Scope | LFID | Discord ID | Email | Company Affiliation |
+|-----------------------|-------------------|-------|------|------------|-------|---------------------|
+| Keith Kowal           | Reccetech         |       |      |            |       | Hashgraph           |
+| Diane Muller          | dmueller2001      |       |      |            |       | Hashgraph           |
+| Alexander Shenshin    | AlexanderShenshin |       |      |            |       | DSR                 |
+| Pablo Buitrago        | ChangoBuitrago    |       |      |            |       |                     |
+| Jakub Sydor           | Harasz            |       |      |            |       |                     |
+| Renata Toktar         | Toktar            |       |      |            |       |                     |
+| Alexander Shcherbakov | ashcherbakov      |       |      |            |       | DSR                 |
+| Artem Ivanov          | Artemkaaas        |       |      |            |       | DSR                 |
 
 ## Emeritus Maintainers
 
