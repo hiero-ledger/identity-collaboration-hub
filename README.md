@@ -79,6 +79,10 @@ Please note that topics related to integration plugins (OWF Credo, ACA-Py) can a
 - `Growth projects` -> `credo` - channel dedicated to Credo framework
 - `Impact projects` -> `acapy` - channel dedicated to ACA-Py agent
 
+## Code of Conduct
+
+Hiero uses the Linux Foundation Decentralised Trust [Code of Conduct](https://www.lfdecentralizedtrust.org/code-of-conduct).
+
 ## Roadmap (short-term)
 
 - Extending guides, adding new ones and other community materials
